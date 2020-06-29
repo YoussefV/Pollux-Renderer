@@ -105,14 +105,23 @@ By far my favorite name for anything of made, this is basically a pseudo-random 
 
 ### Features
 
-[ ] Scene file loading
-[ ] Naive Shading
-[ ] Multiple Importance Sampling
+[X] Scene file loading
+
+[X] Naive Shading
+
+[X] Multiple Importance Sampling
+
 [ ] Stream Compaction
-[ ] Acceleration Structure / GLTF Loading?
+
+[X] Acceleration Structure
+
+[ ] GLTF Loading?
+
 [ ] AR Kit??
 
 ### Potential Improvements
+
+- 2020 Edit: [Look into using MPS for intersections](https://developer.apple.com/documentation/metalperformanceshaders/metal_for_accelerating_ray_tracing)
 
 - **Better CPU/GPU Synchronization**
 Can't figure out how to work with semaphores for some reason. If any prospective reader wants to take a crack at it, look for `MARK: SEMAPHORE CODE` in `PolluxRenderer.swift`.
@@ -121,8 +130,6 @@ Can't figure out how to work with semaphores for some reason. If any prospective
 There's a way to do this, just can't figure it out.
 
 - **Play around with different memory storage modes for the Shared Buffers**
-
-- **Look into faster linear algebra computations in Metal (maybe using MPS?)**
 
 - **Different memory address spaces in my shaders for local variables**
 

@@ -32,11 +32,11 @@
 //#define scene_file "cornell"
 //#define scene_file "cornell-reflect"
 //#define scene_file "cornell-refract"
-#define scene_file "environment-scene"
+//#define scene_file "environment-scene"
 //#define scene_file "cornell-mesh"
 //#define scene_file "mars"
 //#define scene_file "marsMIS"
-//#define scene_file "lion-mesh"
+#define scene_file "lion-mesh"
 //#define scene_file "dragon-mesh"  -- WORK IN PROGRESS
 
 
@@ -46,8 +46,8 @@
  *************************************
  *************************************/
 
-#define integrator "Naive"
-//#define integrator "MIS"
+//#define integrator "Naive"
+#define integrator "MIS"
 //#define integrator "Direct"
 
 
@@ -56,7 +56,7 @@
  ******* Select Antialiasing Amount: ****
  ****************************************
  ****************************************/
-#define AA_SIZE 2.f
+#define AA_SIZE 5.f
 
 
 #endif /* SceneParameters_h */

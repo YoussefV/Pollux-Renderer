@@ -316,10 +316,9 @@ extension PolluxRenderer {
         
         
         // If drawable is not ready, skip this iteration
-        guard let drawable = view.currentDrawable
-            else { // If drawable
-                // print("Drawable not ready for iteration #\(self.iteration)")
-                return;
+        guard let drawable = view.currentDrawable else { // If drawable
+            print("Drawable not ready for iteration #\(self.iteration)")
+            return;
         }
         
         // Clear the drawable on the first iteration
@@ -327,9 +326,10 @@ extension PolluxRenderer {
             let blitCommandEnconder = commandBuffer?.makeBlitCommandEncoder()
             let frameRange = 0 ..< MemoryLayout<SIMD4<Float>>.stride * self.frame.count
             blitCommandEnconder?.fill(buffer: self.frame.data!, range: frameRange, value: 0)
+            blitCommandEnconder?.copy(from: self.frame.data!, sourceOffset: 0, sourceBytesPerRow: bytesPerRow,
+                                      sourceBytesPerImage: bytesPerRow*self.region.size.height, sourceSize: self.region.size,
+                                      to: drawable.texture, destinationSlice: 0, destinationLevel: 0, destinationOrigin: MTLOriginMake(0, 0, 0))
             blitCommandEnconder?.endEncoding()
-            
-            drawable.texture.replace(region: self.region, mipmapLevel: 0, withBytes: blankBitmapRawData, bytesPerRow: bytesPerRow)
         }
         
         let commandEncoder = commandBuffer?.makeComputeCommandEncoder()
@@ -366,8 +366,9 @@ extension PolluxRenderer : MTKViewDelegate {
         // MARK: SEMAPHORE CODE - Wait
         // Wait until the last iteration is finished
 //        _ = self.iterationSemaphore.wait(timeout: DispatchTime.distantFuture)
-        
-        self.pathtrace(in: view)
+        autoreleasepool {
+            self.pathtrace(in: view)
+        }
     }
     
     // If the window changes, change the size of display
