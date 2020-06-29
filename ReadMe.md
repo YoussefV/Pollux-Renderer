@@ -38,7 +38,7 @@ Pollux is a Monte Carlo Path Tracer built completely in Metal. It can run on bot
 
 ### Build Instructions
 
-[Select the appropriate scheme](/Debug\ Views/scheme.png) and run by clicking on the play button.
+[Select the appropriate scheme](Debug%20Views/scheme.png) and run by clicking on the play button.
 
 If you are running on iOS you must run on an actual device as Metal is not supported on the simulator.
 
@@ -105,19 +105,19 @@ By far my favorite name for anything of made, this is basically a pseudo-random 
 
 ### Features
 
-[X] Scene file loading
+- [x] Scene file loading
 
-[X] Naive Shading
+- [x] Naive Shading
 
-[X] Multiple Importance Sampling
+- [x] Multiple Importance Sampling
 
-[ ] Stream Compaction
+- [ ] Stream Compaction
 
-[X] Acceleration Structure
+- [x] Acceleration Structure
 
-[ ] GLTF Loading?
+- [x] OBJ Loading
 
-[ ] AR Kit??
+- [ ] AR Kit??
 
 ### Potential Improvements
 
