@@ -20,6 +20,14 @@ class SceneParser {
     private static var kdTreeOffset = 0
     private static var kdTrees : [Float] = []
     
+    private static func parseFloatArray(_ dict: [String: Any], _ key: String) -> float3? {
+        if let arr = dict[key] {
+             return float3((arr as! Array<NSNumber>).map{$0.floatValue})
+        } else {
+            return nil
+        }
+    }
+    
     private static func parseEnvironment(_ environmentJSON : [String: Any]?) -> Environment?  {
         if (environmentJSON) == nil {return nil}
         let filepath = environmentJSON!["filepath"] as! String
@@ -30,9 +38,9 @@ class SceneParser {
     
     private static func parseCamera(_ cameraJSON : [String : Any]) -> Camera {
         var camera = Camera();
-        camera.pos    = float3(cameraJSON["pos"] as! Array<Float>)
-        camera.lookAt = float3(cameraJSON["lookAt"] as! Array<Float>)
-        camera.up     = float3(cameraJSON["up"] as! Array<Float>)
+        camera.pos    = parseFloatArray(cameraJSON, "pos")!
+        camera.lookAt = parseFloatArray(cameraJSON, "lookAt")!
+        camera.up     = parseFloatArray(cameraJSON, "up")!
         camera.data   = float4(0,0, cameraJSON["fov"] as! Float, cameraJSON["depth"] as! Float)
         camera.lensData = float2(cameraJSON["lensRadius"] as? Float ?? 0.0, cameraJSON["focalDistance"] as? Float ?? 1.0)
         
@@ -60,9 +68,9 @@ class SceneParser {
                geom.meshData.meshIndex     = -1
             }
             geom.materialid  = geomJSON["material"] as! Int32
-            geom.translation = float3(geomJSON["translate"] as! Array<Float>)
-            geom.rotation    = float3(geomJSON["rotate"] as! Array<Float>)
-            geom.scale       = float3(geomJSON["scale"] as! Array<Float>)
+            geom.translation = parseFloatArray(geomJSON, "translate")!
+            geom.rotation    = parseFloatArray(geomJSON, "rotate")!
+            geom.scale       = parseFloatArray(geomJSON, "scale")!
             let s_tr = simd_translation(dt: geom.translation)
             let s_rt = simd_rotation(dr:    geom.rotation)
             let s_sc = simd_scale(ds:       geom.scale)
@@ -82,12 +90,12 @@ class SceneParser {
         for materialJSON in materialsJSON {
             var material = Material();
             material.bsdf                = materialJSON["bsdf"] as? Int16 ?? 0
-            material.color               = float3(materialJSON["color"] as? Array<Float> ?? [0.2, 0.2, 0.2])
-            material.emittance           = float3(materialJSON["emittance"] as? Array<Float> ?? [0, 0, 0])
+            material.color               = parseFloatArray(materialJSON, "color") ?? float3(0.2, 0.2, 0.2)
+            material.emittance           = parseFloatArray(materialJSON, "emittance") ?? float3(0, 0, 0)
             material.hasReflective       = materialJSON["hasReflective"] as? Float ?? 0.0
             material.hasRefractive       = materialJSON["hasRefractive"] as? Float ?? 0.0
             material.index_of_refraction = materialJSON["index_of_refraction"] as? Float ?? 0.0
-            material.specular_color      = float3(materialJSON["specular_color"] as? Array<Float> ?? [0, 0, 0])
+            material.specular_color      = parseFloatArray(materialJSON, "specular_color") ?? float3(0, 0, 0)
             material.specular_exponent   = materialJSON["specular_exponent"] as? Float ?? 0.0
             
             self.light_types += (material.bsdf < 0) ? 1 : 0;
@@ -107,9 +115,9 @@ class SceneParser {
 
         if let file = Bundle.main.url(forResource: platform_file, withExtension: "json") {
             do {
-                let data        = try Data(contentsOf: file, options: [])
+                let data = try Data(contentsOf: file, options: .mappedIfSafe)
                 let jsonFile    = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                let camera      = parseCamera(jsonFile["camera"] as! [String : Any])
+                let camera      = parseCamera(jsonFile["camera"] as! [String : NSObject])
                 let materials   = parseMaterials(jsonFile["materials"] as! [[String : Any]])
                 let environment = parseEnvironment(jsonFile["environment"] as? [String : Any] ?? nil) ?? nil
                 let (geometry, light_count)  = parseGeometry(jsonFile["geometry"] as! [[String : Any]])
@@ -118,7 +126,7 @@ class SceneParser {
                 fatalError(error.localizedDescription)
             }
         } else {
-            fatalError("Could not find scene file, please check file path and try again.")
+            fatalError("Could not find scene file: \(platform_file), please check file path and try again.")
         }
     }
 }

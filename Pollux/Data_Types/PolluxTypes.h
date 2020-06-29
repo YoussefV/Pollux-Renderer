@@ -9,7 +9,7 @@
 #ifndef PolluxTypes_h
 #define PolluxTypes_h
 
-#import "simd/simd.h"
+#import <simd/simd.h>
 #include "MicrofacetDistributions.h"
 
 #define MAX_FILENAME_LENGTH 50
@@ -153,10 +153,10 @@ typedef struct {
     int materialId;
     
     int outside;
-    float2 uv;               // The UV coordinates computed at the intersection
-    float3 tangent, bitangent;
+    vector_float2 uv;               // The UV coordinates computed at the intersection
+    vector_float3 tangent, bitangent;
     
-    Geometry const * objectHit;     // The object that the ray intersected, or nullptr if the ray hit nothing.
+//    Geom const* objectHit;     // The object that the ray intersected, or nullptr if the ray hit nothing.
 } Intersection;
 
 #endif /* PolluxTypes_h */

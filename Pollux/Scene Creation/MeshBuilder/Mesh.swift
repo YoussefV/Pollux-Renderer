@@ -260,7 +260,6 @@ class Mesh {
             // 2 - if the depth >= maxDepth (too deep)
             // 3 - if the distance along axis we're splitting on is tiny
             //
-            
             if (triangles.count > threshold && depth < maxDepth && abs(nodeMin[axis] - nodeMax[axis]) > SplitEpsilon) {
                 
                 // Get the Split Point between min & max along the `axis` dimension

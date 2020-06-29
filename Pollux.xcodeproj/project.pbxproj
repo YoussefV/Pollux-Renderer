@@ -7,24 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B06421F1FD9177E00EECC64 /* environment-scene-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421A1FD9177D00EECC64 /* environment-scene-ios.json */; };
-		0B0642201FD9177E00EECC64 /* environment-scene.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421B1FD9177D00EECC64 /* environment-scene.json */; };
-		0B0642211FD9177E00EECC64 /* environment1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421C1FD9177D00EECC64 /* environment1.png */; };
-		0B0642221FD9177E00EECC64 /* environment2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421D1FD9177D00EECC64 /* environment2.jpg */; };
-		0B0642231FD9177E00EECC64 /* environment.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421E1FD9177E00EECC64 /* environment.json */; };
 		0B0642261FD9188400EECC64 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0642241FD9188300EECC64 /* Environment.swift */; };
 		0B0642271FD9188400EECC64 /* DeviceTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0642251FD9188300EECC64 /* DeviceTexture.swift */; };
 		0B0642281FD9193800EECC64 /* DeviceTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0642251FD9188300EECC64 /* DeviceTexture.swift */; };
 		0B0642291FD9193A00EECC64 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0642241FD9188300EECC64 /* Environment.swift */; };
-		0B06422A1FD9247000EECC64 /* environment-scene-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421A1FD9177D00EECC64 /* environment-scene-ios.json */; };
-		0B06422B1FD9247300EECC64 /* environment-scene.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421B1FD9177D00EECC64 /* environment-scene.json */; };
-		0B06422C1FD9247700EECC64 /* environment.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421E1FD9177E00EECC64 /* environment.json */; };
-		0B06422D1FD9247C00EECC64 /* environment2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421D1FD9177D00EECC64 /* environment2.jpg */; };
-		0B06422E1FD9247E00EECC64 /* environment1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B06421C1FD9177D00EECC64 /* environment1.png */; };
-		0B06422F1FD9248400EECC64 /* cornell-refract-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = D8E60DCA1FD7A3AA00755A06 /* cornell-refract-ios.json */; };
-		0B0642301FD9248600EECC64 /* cornell-refract.json in Resources */ = {isa = PBXBuildFile; fileRef = D8E60DC91FD7A3A900755A06 /* cornell-refract.json */; };
-		0B0642311FD9248800EECC64 /* cornell-reflect-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = D822E22F1FD70F38009CF57D /* cornell-reflect-ios.json */; };
-		0B0642321FD9248A00EECC64 /* cornell-reflect.json in Resources */ = {isa = PBXBuildFile; fileRef = D822E22E1FD70F38009CF57D /* cornell-reflect.json */; };
+		52105E3C24AA448D00F16F0A /* cornell.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1524AA448D00F16F0A /* cornell.json */; };
+		52105E3D24AA448D00F16F0A /* cornell.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1524AA448D00F16F0A /* cornell.json */; };
+		52105E3E24AA448D00F16F0A /* lion-environment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1724AA448D00F16F0A /* lion-environment.jpg */; };
+		52105E3F24AA448D00F16F0A /* lion-environment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1724AA448D00F16F0A /* lion-environment.jpg */; };
+		52105E4024AA448D00F16F0A /* lion-mesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1824AA448D00F16F0A /* lion-mesh.json */; };
+		52105E4124AA448D00F16F0A /* lion-mesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1824AA448D00F16F0A /* lion-mesh.json */; };
+		52105E4224AA448D00F16F0A /* cornell-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1924AA448D00F16F0A /* cornell-ios.json */; };
+		52105E4324AA448D00F16F0A /* cornell-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1924AA448D00F16F0A /* cornell-ios.json */; };
+		52105E4424AA448D00F16F0A /* cornell-refract.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1A24AA448D00F16F0A /* cornell-refract.json */; };
+		52105E4524AA448D00F16F0A /* cornell-refract.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1A24AA448D00F16F0A /* cornell-refract.json */; };
+		52105E4624AA448D00F16F0A /* sphere.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1B24AA448D00F16F0A /* sphere.json */; };
+		52105E4724AA448D00F16F0A /* sphere.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1B24AA448D00F16F0A /* sphere.json */; };
+		52105E4824AA448D00F16F0A /* cornell-reflect.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1C24AA448D00F16F0A /* cornell-reflect.json */; };
+		52105E4924AA448D00F16F0A /* cornell-reflect.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1C24AA448D00F16F0A /* cornell-reflect.json */; };
+		52105E4A24AA448D00F16F0A /* dragon-environment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1E24AA448D00F16F0A /* dragon-environment.jpg */; };
+		52105E4B24AA448D00F16F0A /* dragon-environment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1E24AA448D00F16F0A /* dragon-environment.jpg */; };
+		52105E4C24AA448D00F16F0A /* dragon-mesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1F24AA448D00F16F0A /* dragon-mesh.json */; };
+		52105E4D24AA448D00F16F0A /* dragon-mesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E1F24AA448D00F16F0A /* dragon-mesh.json */; };
+		52105E4E24AA448D00F16F0A /* environment-scene.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2024AA448D00F16F0A /* environment-scene.json */; };
+		52105E4F24AA448D00F16F0A /* environment-scene.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2024AA448D00F16F0A /* environment-scene.json */; };
+		52105E5024AA448D00F16F0A /* environment-scene-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2124AA448D00F16F0A /* environment-scene-ios.json */; };
+		52105E5124AA448D00F16F0A /* environment-scene-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2124AA448D00F16F0A /* environment-scene-ios.json */; };
+		52105E5224AA448D00F16F0A /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2324AA448D00F16F0A /* test.bmp */; };
+		52105E5324AA448D00F16F0A /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2324AA448D00F16F0A /* test.bmp */; };
+		52105E5424AA448D00F16F0A /* simple.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2424AA448D00F16F0A /* simple.mtl */; };
+		52105E5524AA448D00F16F0A /* simple.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2424AA448D00F16F0A /* simple.mtl */; };
+		52105E5624AA448D00F16F0A /* lion.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2524AA448D00F16F0A /* lion.obj */; };
+		52105E5724AA448D00F16F0A /* lion.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2524AA448D00F16F0A /* lion.obj */; };
+		52105E5824AA448D00F16F0A /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2624AA448D00F16F0A /* plane.obj */; };
+		52105E5924AA448D00F16F0A /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2624AA448D00F16F0A /* plane.obj */; };
+		52105E5A24AA448D00F16F0A /* plane2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2724AA448D00F16F0A /* plane2.obj */; };
+		52105E5B24AA448D00F16F0A /* plane2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2724AA448D00F16F0A /* plane2.obj */; };
+		52105E5C24AA448D00F16F0A /* cornell-mesh-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2824AA448D00F16F0A /* cornell-mesh-ios.json */; };
+		52105E5D24AA448D00F16F0A /* cornell-mesh-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2824AA448D00F16F0A /* cornell-mesh-ios.json */; };
+		52105E5E24AA448D00F16F0A /* test_diffuse.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2924AA448D00F16F0A /* test_diffuse.bmp */; };
+		52105E5F24AA448D00F16F0A /* test_diffuse.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2924AA448D00F16F0A /* test_diffuse.bmp */; };
+		52105E6024AA448D00F16F0A /* cornell-mesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2A24AA448D00F16F0A /* cornell-mesh.json */; };
+		52105E6124AA448D00F16F0A /* cornell-mesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2A24AA448D00F16F0A /* cornell-mesh.json */; };
+		52105E6224AA448D00F16F0A /* simple.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2B24AA448D00F16F0A /* simple.obj */; };
+		52105E6324AA448D00F16F0A /* simple.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2B24AA448D00F16F0A /* simple.obj */; };
+		52105E6424AA448D00F16F0A /* cornell-reflect-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2C24AA448D00F16F0A /* cornell-reflect-ios.json */; };
+		52105E6524AA448D00F16F0A /* cornell-reflect-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2C24AA448D00F16F0A /* cornell-reflect-ios.json */; };
+		52105E6624AA448D00F16F0A /* environment1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2D24AA448D00F16F0A /* environment1.png */; };
+		52105E6724AA448D00F16F0A /* environment1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2D24AA448D00F16F0A /* environment1.png */; };
+		52105E6824AA448D00F16F0A /* environment.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2E24AA448D00F16F0A /* environment.json */; };
+		52105E6924AA448D00F16F0A /* environment.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E2E24AA448D00F16F0A /* environment.json */; };
+		52105E6A24AA448D00F16F0A /* acropolis3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3024AA448D00F16F0A /* acropolis3.obj */; };
+		52105E6B24AA448D00F16F0A /* acropolis3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3024AA448D00F16F0A /* acropolis3.obj */; };
+		52105E6C24AA448D00F16F0A /* acropolis2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3124AA448D00F16F0A /* acropolis2.obj */; };
+		52105E6D24AA448D00F16F0A /* acropolis2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3124AA448D00F16F0A /* acropolis2.obj */; };
+		52105E6E24AA448D00F16F0A /* marsMIS.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3224AA448D00F16F0A /* marsMIS.json */; };
+		52105E6F24AA448D00F16F0A /* marsMIS.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3224AA448D00F16F0A /* marsMIS.json */; };
+		52105E7024AA448D00F16F0A /* marsMIS-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3324AA448D00F16F0A /* marsMIS-ios.json */; };
+		52105E7124AA448D00F16F0A /* marsMIS-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3324AA448D00F16F0A /* marsMIS-ios.json */; };
+		52105E7224AA448D00F16F0A /* mars.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3424AA448D00F16F0A /* mars.obj */; };
+		52105E7324AA448D00F16F0A /* mars.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3424AA448D00F16F0A /* mars.obj */; };
+		52105E7424AA448D00F16F0A /* acropoli.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3524AA448D00F16F0A /* acropoli.obj */; };
+		52105E7524AA448D00F16F0A /* acropoli.obj in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3524AA448D00F16F0A /* acropoli.obj */; };
+		52105E7624AA448D00F16F0A /* mars-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3624AA448D00F16F0A /* mars-ios.json */; };
+		52105E7724AA448D00F16F0A /* mars-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3624AA448D00F16F0A /* mars-ios.json */; };
+		52105E7824AA448D00F16F0A /* acropolis3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3724AA448D00F16F0A /* acropolis3.mtl */; };
+		52105E7924AA448D00F16F0A /* acropolis3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3724AA448D00F16F0A /* acropolis3.mtl */; };
+		52105E7A24AA448D00F16F0A /* mars.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3824AA448D00F16F0A /* mars.json */; };
+		52105E7B24AA448D00F16F0A /* mars.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3824AA448D00F16F0A /* mars.json */; };
+		52105E7C24AA448D00F16F0A /* environment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3924AA448D00F16F0A /* environment.jpg */; };
+		52105E7D24AA448D00F16F0A /* environment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3924AA448D00F16F0A /* environment.jpg */; };
+		52105E7E24AA448D00F16F0A /* environment2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3A24AA448D00F16F0A /* environment2.jpg */; };
+		52105E7F24AA448D00F16F0A /* environment2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3A24AA448D00F16F0A /* environment2.jpg */; };
+		52105E8024AA448D00F16F0A /* cornell-refract-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3B24AA448D00F16F0A /* cornell-refract-ios.json */; };
+		52105E8124AA448D00F16F0A /* cornell-refract-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 52105E3B24AA448D00F16F0A /* cornell-refract-ios.json */; };
+		52C00BC524AA3FB50074A99D /* PolluxTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = D85B3EA61FB3F58D001036B0 /* PolluxTypes.h */; };
+		52C00BC624AA3FB50074A99D /* Constants.h in Sources */ = {isa = PBXBuildFile; fileRef = D8BD567E1FC5ED3700375BC2 /* Constants.h */; };
+		52C00BD424AA3FC90074A99D /* shapes_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D85481E51FDB71DB006EDBB0 /* shapes_header.metal */; };
+		52C00BD524AA3FC90074A99D /* shapes.metal in Sources */ = {isa = PBXBuildFile; fileRef = D85481E71FDB722C006EDBB0 /* shapes.metal */; };
+		52C00BD824AA3FD70074A99D /* SceneParameters.h in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BA124AA3AD60074A99D /* SceneParameters.h */; };
+		52C00BDB24AA40770074A99D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8718BD51FB2BE7B00260B81 /* Main.storyboard */; };
+		52C00BFA24AA41CB0074A99D /* SceneParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BE924AA41CA0074A99D /* SceneParser.swift */; };
+		52C00BFB24AA41CB0074A99D /* SceneParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BE924AA41CA0074A99D /* SceneParser.swift */; };
+		52C00BFC24AA41CB0074A99D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BEB24AA41CA0074A99D /* Mesh.swift */; };
+		52C00BFD24AA41CB0074A99D /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BEB24AA41CA0074A99D /* Mesh.swift */; };
+		52C00BFE24AA41CB0074A99D /* MeshCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BEC24AA41CA0074A99D /* MeshCreator.swift */; };
+		52C00BFF24AA41CB0074A99D /* MeshCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BEC24AA41CA0074A99D /* MeshCreator.swift */; };
+		52C00C0024AA41CB0074A99D /* HelperStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BED24AA41CA0074A99D /* HelperStructs.swift */; };
+		52C00C0124AA41CB0074A99D /* HelperStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BED24AA41CA0074A99D /* HelperStructs.swift */; };
+		52C00C0224AA41CB0074A99D /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BEF24AA41CA0074A99D /* Geometry.swift */; };
+		52C00C0324AA41CB0074A99D /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BEF24AA41CA0074A99D /* Geometry.swift */; };
+		52C00C0424AA41CB0074A99D /* OBJMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF024AA41CA0074A99D /* OBJMaterial.swift */; };
+		52C00C0524AA41CB0074A99D /* OBJMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF024AA41CA0074A99D /* OBJMaterial.swift */; };
+		52C00C0624AA41CB0074A99D /* MaterialLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF124AA41CA0074A99D /* MaterialLoader.swift */; };
+		52C00C0724AA41CB0074A99D /* MaterialLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF124AA41CA0074A99D /* MaterialLoader.swift */; };
+		52C00C0824AA41CB0074A99D /* MeshParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF224AA41CA0074A99D /* MeshParser.swift */; };
+		52C00C0924AA41CB0074A99D /* MeshParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF224AA41CA0074A99D /* MeshParser.swift */; };
+		52C00C0A24AA41CB0074A99D /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF424AA41CA0074A99D /* Scanner.swift */; };
+		52C00C0B24AA41CB0074A99D /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF424AA41CA0074A99D /* Scanner.swift */; };
+		52C00C0C24AA41CB0074A99D /* ObjLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF524AA41CA0074A99D /* ObjLoader.swift */; };
+		52C00C0D24AA41CB0074A99D /* ObjLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF524AA41CA0074A99D /* ObjLoader.swift */; };
+		52C00C0E24AA41CB0074A99D /* PolluxRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF724AA41CB0074A99D /* PolluxRenderer.swift */; };
+		52C00C0F24AA41CB0074A99D /* PolluxRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF724AA41CB0074A99D /* PolluxRenderer.swift */; };
+		52C00C1024AA41CB0074A99D /* PolluxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF824AA41CB0074A99D /* PolluxViewController.swift */; };
+		52C00C1124AA41CB0074A99D /* PolluxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF824AA41CB0074A99D /* PolluxViewController.swift */; };
+		52C00C1224AA41CB0074A99D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF924AA41CB0074A99D /* LaunchViewController.swift */; };
+		52C00C1324AA41CB0074A99D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF924AA41CB0074A99D /* LaunchViewController.swift */; };
+		52C00C1424AA41E00074A99D /* SwiftObjLoader.h in Sources */ = {isa = PBXBuildFile; fileRef = 52C00BF324AA41CA0074A99D /* SwiftObjLoader.h */; };
 		D80BE56A1FCE5D7C0023713F /* DeviceBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BE5691FCE5D7C0023713F /* DeviceBuffer.swift */; };
 		D81110601FC455E80059C01B /* intersections.metal in Sources */ = {isa = PBXBuildFile; fileRef = D811105F1FC455E80059C01B /* intersections.metal */; };
 		D81373B01FD86B51001A7EAC /* mis_helper_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D81373AD1FD86B51001A7EAC /* mis_helper_header.metal */; };
@@ -33,41 +122,24 @@
 		D81373B31FD86B51001A7EAC /* mis.metal in Sources */ = {isa = PBXBuildFile; fileRef = D81373AE1FD86B51001A7EAC /* mis.metal */; };
 		D81373B41FD86B51001A7EAC /* mis_helper.metal in Sources */ = {isa = PBXBuildFile; fileRef = D81373AF1FD86B51001A7EAC /* mis_helper.metal */; };
 		D81373B51FD86B51001A7EAC /* mis_helper.metal in Sources */ = {isa = PBXBuildFile; fileRef = D81373AF1FD86B51001A7EAC /* mis_helper.metal */; };
-		D822E2301FD70F38009CF57D /* cornell-reflect.json in Resources */ = {isa = PBXBuildFile; fileRef = D822E22E1FD70F38009CF57D /* cornell-reflect.json */; };
-		D822E2311FD70F38009CF57D /* cornell-reflect-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = D822E22F1FD70F38009CF57D /* cornell-reflect-ios.json */; };
-		D823849B1FDB376800DB5AA4 /* Partition.metal in Sources */ = {isa = PBXBuildFile; fileRef = D82384991FDB376800DB5AA4 /* Partition.metal */; };
-		D823849C1FDB376800DB5AA4 /* Partition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D823849A1FDB376800DB5AA4 /* Partition.swift */; };
 		D825716F1FBF9F2C00352CDD /* SharedBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D825716E1FBF9F2C00352CDD /* SharedBuffer.swift */; };
 		D826C02F1FC867AE00BD8A3E /* PlatformTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826C02E1FC867AE00BD8A3E /* PlatformTypes.swift */; };
 		D826C0C31FC8930800BD8A3E /* Pollux-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = D85B3EA71FB3F5D0001036B0 /* Pollux-Bridging-Header.h */; };
-		D826EE001FCA4E750078118A /* StreamCompactor.metal in Sources */ = {isa = PBXBuildFile; fileRef = D826EDFE1FCA4E750078118A /* StreamCompactor.metal */; };
-		D826EE011FCA4E750078118A /* StreamCompactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826EDFF1FCA4E750078118A /* StreamCompactor.swift */; };
 		D8388BD61FB3973600653E5D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8388BD51FB3972E00653E5D /* Metal.framework */; };
 		D8388BD71FB3973600653E5D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8388BD41FB3972E00653E5D /* MetalKit.framework */; };
-		D8388BDB1FB3A2F000653E5D /* PolluxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8388BDA1FB3A2F000653E5D /* PolluxViewController.swift */; };
-		D8388BF81FB3A7E800653E5D /* PolluxRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8388BF71FB3A7E800653E5D /* PolluxRenderer.swift */; };
 		D84F8F201FC4682E0001CF76 /* simd_la.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F8F1F1FC4682E0001CF76 /* simd_la.swift */; };
 		D84F8F221FC483320001CF76 /* intersections_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D84F8F211FC483320001CF76 /* intersections_header.metal */; };
 		D85481E61FDB71DB006EDBB0 /* shapes_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D85481E51FDB71DB006EDBB0 /* shapes_header.metal */; };
 		D85481E81FDB722C006EDBB0 /* shapes.metal in Sources */ = {isa = PBXBuildFile; fileRef = D85481E71FDB722C006EDBB0 /* shapes.metal */; };
 		D8718BD01FB2BE7B00260B81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8718BCF1FB2BE7B00260B81 /* AppDelegate.swift */; };
 		D8718BD41FB2BE7B00260B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8718BD31FB2BE7B00260B81 /* Assets.xcassets */; };
-		D8718BD71FB2BE7B00260B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8718BD51FB2BE7B00260B81 /* Main.storyboard */; };
 		D8718BE21FB2BFFF00260B81 /* pathtrace.metal in Sources */ = {isa = PBXBuildFile; fileRef = D8718BE11FB2BFFF00260B81 /* pathtrace.metal */; };
-		D884B96E1FC4A284006A14CF /* SceneParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884B96D1FC4A284006A14CF /* SceneParser.swift */; };
-		D884B9711FC4EEC5006A14CF /* sphere.json in Resources */ = {isa = PBXBuildFile; fileRef = D884B9701FC4EEC5006A14CF /* sphere.json */; };
 		D884B9731FC51624006A14CF /* loki.metal in Sources */ = {isa = PBXBuildFile; fileRef = D884B9721FC51624006A14CF /* loki.metal */; };
 		D884B9751FC51A27006A14CF /* loki_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D884B9741FC51A27006A14CF /* loki_header.metal */; };
 		D8BD56791FC5DF9900375BC2 /* interactions_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D8BD56781FC5DF9900375BC2 /* interactions_header.metal */; };
 		D8BD567B1FC5E50B00375BC2 /* interactions.metal in Sources */ = {isa = PBXBuildFile; fileRef = D8BD567A1FC5E50B00375BC2 /* interactions.metal */; };
 		D8BD56801FC5F8A000375BC2 /* bsdf_shading_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D8BD567F1FC5F8A000375BC2 /* bsdf_shading_header.metal */; };
 		D8BD56821FC5F9F600375BC2 /* bsdf_shading.metal in Sources */ = {isa = PBXBuildFile; fileRef = D8BD56811FC5F9F600375BC2 /* bsdf_shading.metal */; };
-		D8BD56841FC5FDEA00375BC2 /* cornell.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BD56831FC5FDEA00375BC2 /* cornell.json */; };
-		D8D1E6EA1FD5D332005A6757 /* PolluxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8388BDA1FB3A2F000653E5D /* PolluxViewController.swift */; };
-		D8D1E6EB1FD5D332005A6757 /* SceneParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884B96D1FC4A284006A14CF /* SceneParser.swift */; };
-		D8D1E6EC1FD5D332005A6757 /* PolluxRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8388BF71FB3A7E800653E5D /* PolluxRenderer.swift */; };
-		D8D1E6ED1FD5D332005A6757 /* StreamCompactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826EDFF1FCA4E750078118A /* StreamCompactor.swift */; };
-		D8D1E6EE1FD5D332005A6757 /* StreamCompactor.metal in Sources */ = {isa = PBXBuildFile; fileRef = D826EDFE1FCA4E750078118A /* StreamCompactor.metal */; };
 		D8D1E6EF1FD5D332005A6757 /* pathtrace.metal in Sources */ = {isa = PBXBuildFile; fileRef = D8718BE11FB2BFFF00260B81 /* pathtrace.metal */; };
 		D8D1E6F01FD5D332005A6757 /* intersections_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D84F8F211FC483320001CF76 /* intersections_header.metal */; };
 		D8D1E6F11FD5D332005A6757 /* intersections.metal in Sources */ = {isa = PBXBuildFile; fileRef = D811105F1FC455E80059C01B /* intersections.metal */; };
@@ -85,38 +157,71 @@
 		D8D1E6FD1FD5D332005A6757 /* PlatformTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826C02E1FC867AE00BD8A3E /* PlatformTypes.swift */; };
 		D8D1E6FE1FD5D332005A6757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826C08A1FC88E0C00BD8A3E /* AppDelegate.swift */; };
 		D8D1E6FF1FD5D332005A6757 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = D826C0911FC88E0C00BD8A3E /* Assets.xcassets */; };
-		D8D1E7001FD5D332005A6757 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = D826C0961FC88E0C00BD8A3E /* Info.plist */; };
 		D8D1E7021FD5D33F005A6757 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8388BF31FB3A54900653E5D /* Metal.framework */; };
 		D8D1E7031FD5D33F005A6757 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8388BF41FB3A54900653E5D /* MetalKit.framework */; };
 		D8D1E7041FD5D3C3005A6757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D826C08E1FC88E0C00BD8A3E /* Main.storyboard */; };
 		D8D1E7051FD5D3C3005A6757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D826C0911FC88E0C00BD8A3E /* Assets.xcassets */; };
 		D8D1E7061FD5D3C3005A6757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D826C0931FC88E0C00BD8A3E /* LaunchScreen.storyboard */; };
-		D8D1E7071FD5D48D005A6757 /* cornell.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BD56831FC5FDEA00375BC2 /* cornell.json */; };
-		D8D1E7081FD5D48D005A6757 /* sphere.json in Resources */ = {isa = PBXBuildFile; fileRef = D884B9701FC4EEC5006A14CF /* sphere.json */; };
-		D8D1E70A1FD5D562005A6757 /* cornell-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E7091FD5D562005A6757 /* cornell-ios.json */; };
-		D8D1E70B1FD5D565005A6757 /* cornell-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D1E7091FD5D562005A6757 /* cornell-ios.json */; };
-		D8E60DCB1FD7A3AA00755A06 /* cornell-refract.json in Resources */ = {isa = PBXBuildFile; fileRef = D8E60DC91FD7A3A900755A06 /* cornell-refract.json */; };
-		D8E60DCC1FD7A3AA00755A06 /* cornell-refract-ios.json in Resources */ = {isa = PBXBuildFile; fileRef = D8E60DCA1FD7A3AA00755A06 /* cornell-refract-ios.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B06421A1FD9177D00EECC64 /* environment-scene-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "environment-scene-ios.json"; sourceTree = "<group>"; };
-		0B06421B1FD9177D00EECC64 /* environment-scene.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "environment-scene.json"; sourceTree = "<group>"; };
-		0B06421C1FD9177D00EECC64 /* environment1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = environment1.png; sourceTree = "<group>"; };
-		0B06421D1FD9177D00EECC64 /* environment2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = environment2.jpg; sourceTree = "<group>"; };
-		0B06421E1FD9177E00EECC64 /* environment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = environment.json; sourceTree = "<group>"; };
 		0B0642241FD9188300EECC64 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		0B0642251FD9188300EECC64 /* DeviceTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTexture.swift; sourceTree = "<group>"; };
+		52105E1524AA448D00F16F0A /* cornell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cornell.json; sourceTree = "<group>"; };
+		52105E1724AA448D00F16F0A /* lion-environment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lion-environment.jpg"; sourceTree = "<group>"; };
+		52105E1824AA448D00F16F0A /* lion-mesh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lion-mesh.json"; sourceTree = "<group>"; };
+		52105E1924AA448D00F16F0A /* cornell-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-ios.json"; sourceTree = "<group>"; };
+		52105E1A24AA448D00F16F0A /* cornell-refract.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-refract.json"; sourceTree = "<group>"; };
+		52105E1B24AA448D00F16F0A /* sphere.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sphere.json; sourceTree = "<group>"; };
+		52105E1C24AA448D00F16F0A /* cornell-reflect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-reflect.json"; sourceTree = "<group>"; };
+		52105E1E24AA448D00F16F0A /* dragon-environment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dragon-environment.jpg"; sourceTree = "<group>"; };
+		52105E1F24AA448D00F16F0A /* dragon-mesh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dragon-mesh.json"; sourceTree = "<group>"; };
+		52105E2024AA448D00F16F0A /* environment-scene.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "environment-scene.json"; sourceTree = "<group>"; };
+		52105E2124AA448D00F16F0A /* environment-scene-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "environment-scene-ios.json"; sourceTree = "<group>"; };
+		52105E2324AA448D00F16F0A /* test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test.bmp; sourceTree = "<group>"; };
+		52105E2424AA448D00F16F0A /* simple.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple.mtl; sourceTree = "<group>"; };
+		52105E2524AA448D00F16F0A /* lion.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lion.obj; sourceTree = "<group>"; };
+		52105E2624AA448D00F16F0A /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
+		52105E2724AA448D00F16F0A /* plane2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane2.obj; sourceTree = "<group>"; };
+		52105E2824AA448D00F16F0A /* cornell-mesh-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-mesh-ios.json"; sourceTree = "<group>"; };
+		52105E2924AA448D00F16F0A /* test_diffuse.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test_diffuse.bmp; sourceTree = "<group>"; };
+		52105E2A24AA448D00F16F0A /* cornell-mesh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-mesh.json"; sourceTree = "<group>"; };
+		52105E2B24AA448D00F16F0A /* simple.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = simple.obj; sourceTree = "<group>"; };
+		52105E2C24AA448D00F16F0A /* cornell-reflect-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-reflect-ios.json"; sourceTree = "<group>"; };
+		52105E2D24AA448D00F16F0A /* environment1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = environment1.png; sourceTree = "<group>"; };
+		52105E2E24AA448D00F16F0A /* environment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = environment.json; sourceTree = "<group>"; };
+		52105E3024AA448D00F16F0A /* acropolis3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acropolis3.obj; sourceTree = "<group>"; };
+		52105E3124AA448D00F16F0A /* acropolis2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acropolis2.obj; sourceTree = "<group>"; };
+		52105E3224AA448D00F16F0A /* marsMIS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = marsMIS.json; sourceTree = "<group>"; };
+		52105E3324AA448D00F16F0A /* marsMIS-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "marsMIS-ios.json"; sourceTree = "<group>"; };
+		52105E3424AA448D00F16F0A /* mars.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mars.obj; sourceTree = "<group>"; };
+		52105E3524AA448D00F16F0A /* acropoli.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acropoli.obj; sourceTree = "<group>"; };
+		52105E3624AA448D00F16F0A /* mars-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mars-ios.json"; sourceTree = "<group>"; };
+		52105E3724AA448D00F16F0A /* acropolis3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acropolis3.mtl; sourceTree = "<group>"; };
+		52105E3824AA448D00F16F0A /* mars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mars.json; sourceTree = "<group>"; };
+		52105E3924AA448D00F16F0A /* environment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = environment.jpg; sourceTree = "<group>"; };
+		52105E3A24AA448D00F16F0A /* environment2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = environment2.jpg; sourceTree = "<group>"; };
+		52105E3B24AA448D00F16F0A /* cornell-refract-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-refract-ios.json"; sourceTree = "<group>"; };
+		52C00BA124AA3AD60074A99D /* SceneParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneParameters.h; sourceTree = "<group>"; };
+		52C00BE924AA41CA0074A99D /* SceneParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneParser.swift; sourceTree = "<group>"; };
+		52C00BEB24AA41CA0074A99D /* Mesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		52C00BEC24AA41CA0074A99D /* MeshCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshCreator.swift; sourceTree = "<group>"; };
+		52C00BED24AA41CA0074A99D /* HelperStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperStructs.swift; sourceTree = "<group>"; };
+		52C00BEF24AA41CA0074A99D /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		52C00BF024AA41CA0074A99D /* OBJMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBJMaterial.swift; sourceTree = "<group>"; };
+		52C00BF124AA41CA0074A99D /* MaterialLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLoader.swift; sourceTree = "<group>"; };
+		52C00BF224AA41CA0074A99D /* MeshParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshParser.swift; sourceTree = "<group>"; };
+		52C00BF324AA41CA0074A99D /* SwiftObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftObjLoader.h; sourceTree = "<group>"; };
+		52C00BF424AA41CA0074A99D /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		52C00BF524AA41CA0074A99D /* ObjLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjLoader.swift; sourceTree = "<group>"; };
+		52C00BF724AA41CB0074A99D /* PolluxRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolluxRenderer.swift; sourceTree = "<group>"; };
+		52C00BF824AA41CB0074A99D /* PolluxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolluxViewController.swift; sourceTree = "<group>"; };
+		52C00BF924AA41CB0074A99D /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		D80BE5691FCE5D7C0023713F /* DeviceBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBuffer.swift; sourceTree = "<group>"; };
 		D811105F1FC455E80059C01B /* intersections.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = intersections.metal; sourceTree = "<group>"; };
-		D81373AC1FD8682A001A7EAC /* SceneParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneParameters.h; sourceTree = "<group>"; };
 		D81373AD1FD86B51001A7EAC /* mis_helper_header.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mis_helper_header.metal; sourceTree = "<group>"; };
 		D81373AE1FD86B51001A7EAC /* mis.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mis.metal; sourceTree = "<group>"; };
 		D81373AF1FD86B51001A7EAC /* mis_helper.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mis_helper.metal; sourceTree = "<group>"; };
-		D822E22E1FD70F38009CF57D /* cornell-reflect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-reflect.json"; sourceTree = "<group>"; };
-		D822E22F1FD70F38009CF57D /* cornell-reflect-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-reflect-ios.json"; sourceTree = "<group>"; };
-		D82384991FDB376800DB5AA4 /* Partition.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Partition.metal; sourceTree = "<group>"; };
-		D823849A1FDB376800DB5AA4 /* Partition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partition.swift; sourceTree = "<group>"; };
 		D825716E1FBF9F2C00352CDD /* SharedBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedBuffer.swift; sourceTree = "<group>"; };
 		D826C02E1FC867AE00BD8A3E /* PlatformTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformTypes.swift; sourceTree = "<group>"; };
 		D826C08A1FC88E0C00BD8A3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,14 +229,10 @@
 		D826C0911FC88E0C00BD8A3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D826C0941FC88E0C00BD8A3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D826C0961FC88E0C00BD8A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D826EDFE1FCA4E750078118A /* StreamCompactor.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = StreamCompactor.metal; sourceTree = "<group>"; };
-		D826EDFF1FCA4E750078118A /* StreamCompactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCompactor.swift; sourceTree = "<group>"; };
 		D8388BD41FB3972E00653E5D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		D8388BD51FB3972E00653E5D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		D8388BDA1FB3A2F000653E5D /* PolluxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolluxViewController.swift; sourceTree = "<group>"; };
 		D8388BF31FB3A54900653E5D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
 		D8388BF41FB3A54900653E5D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
-		D8388BF71FB3A7E800653E5D /* PolluxRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolluxRenderer.swift; sourceTree = "<group>"; };
 		D84F8F1F1FC4682E0001CF76 /* simd_la.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simd_la.swift; sourceTree = "<group>"; };
 		D84F8F211FC483320001CF76 /* intersections_header.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = intersections_header.metal; sourceTree = "<group>"; };
 		D85481E51FDB71DB006EDBB0 /* shapes_header.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shapes_header.metal; sourceTree = "<group>"; };
@@ -145,8 +246,6 @@
 		D8718BD81FB2BE7B00260B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8718BD91FB2BE7B00260B81 /* Pollux.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pollux.entitlements; sourceTree = "<group>"; };
 		D8718BE11FB2BFFF00260B81 /* pathtrace.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = pathtrace.metal; sourceTree = "<group>"; };
-		D884B96D1FC4A284006A14CF /* SceneParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneParser.swift; sourceTree = "<group>"; };
-		D884B9701FC4EEC5006A14CF /* sphere.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sphere.json; sourceTree = "<group>"; };
 		D884B9721FC51624006A14CF /* loki.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = loki.metal; sourceTree = "<group>"; };
 		D884B9741FC51A27006A14CF /* loki_header.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = loki_header.metal; sourceTree = "<group>"; };
 		D8BD56781FC5DF9900375BC2 /* interactions_header.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = interactions_header.metal; path = Pollux/Shaders/interactions_header.metal; sourceTree = SOURCE_ROOT; };
@@ -154,11 +253,7 @@
 		D8BD567E1FC5ED3700375BC2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D8BD567F1FC5F8A000375BC2 /* bsdf_shading_header.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = bsdf_shading_header.metal; sourceTree = "<group>"; };
 		D8BD56811FC5F9F600375BC2 /* bsdf_shading.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = bsdf_shading.metal; sourceTree = "<group>"; };
-		D8BD56831FC5FDEA00375BC2 /* cornell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cornell.json; sourceTree = "<group>"; };
 		D8D1E6D81FD5D316005A6757 /* Pollux-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pollux-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8D1E7091FD5D562005A6757 /* cornell-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-ios.json"; sourceTree = "<group>"; };
-		D8E60DC91FD7A3A900755A06 /* cornell-refract.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-refract.json"; sourceTree = "<group>"; };
-		D8E60DCA1FD7A3AA00755A06 /* cornell-refract-ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cornell-refract-ios.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,22 +278,122 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D82384951FDB30A000DB5AA4 /* Unused Frameworks */ = {
+		52105E1424AA448D00F16F0A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D826EDFD1FCA4E750078118A /* Stream Compaction */,
-				D82384981FDB376800DB5AA4 /* Partition */,
+				52105E1524AA448D00F16F0A /* cornell.json */,
+				52105E1624AA448D00F16F0A /* Lion Scene */,
+				52105E1924AA448D00F16F0A /* cornell-ios.json */,
+				52105E1A24AA448D00F16F0A /* cornell-refract.json */,
+				52105E1B24AA448D00F16F0A /* sphere.json */,
+				52105E1C24AA448D00F16F0A /* cornell-reflect.json */,
+				52105E1D24AA448D00F16F0A /* Dragon Scene */,
+				52105E2024AA448D00F16F0A /* environment-scene.json */,
+				52105E2124AA448D00F16F0A /* environment-scene-ios.json */,
+				52105E2224AA448D00F16F0A /* Mesh_Scene */,
+				52105E2C24AA448D00F16F0A /* cornell-reflect-ios.json */,
+				52105E2D24AA448D00F16F0A /* environment1.png */,
+				52105E2E24AA448D00F16F0A /* environment.json */,
+				52105E2F24AA448D00F16F0A /* Mars Scene */,
+				52105E3A24AA448D00F16F0A /* environment2.jpg */,
+				52105E3B24AA448D00F16F0A /* cornell-refract-ios.json */,
 			);
-			path = "Unused Frameworks";
+			path = Scenes;
 			sourceTree = "<group>";
 		};
-		D82384981FDB376800DB5AA4 /* Partition */ = {
+		52105E1624AA448D00F16F0A /* Lion Scene */ = {
 			isa = PBXGroup;
 			children = (
-				D82384991FDB376800DB5AA4 /* Partition.metal */,
-				D823849A1FDB376800DB5AA4 /* Partition.swift */,
+				52105E1724AA448D00F16F0A /* lion-environment.jpg */,
+				52105E1824AA448D00F16F0A /* lion-mesh.json */,
 			);
-			path = Partition;
+			path = "Lion Scene";
+			sourceTree = "<group>";
+		};
+		52105E1D24AA448D00F16F0A /* Dragon Scene */ = {
+			isa = PBXGroup;
+			children = (
+				52105E1E24AA448D00F16F0A /* dragon-environment.jpg */,
+				52105E1F24AA448D00F16F0A /* dragon-mesh.json */,
+			);
+			path = "Dragon Scene";
+			sourceTree = "<group>";
+		};
+		52105E2224AA448D00F16F0A /* Mesh_Scene */ = {
+			isa = PBXGroup;
+			children = (
+				52105E2324AA448D00F16F0A /* test.bmp */,
+				52105E2424AA448D00F16F0A /* simple.mtl */,
+				52105E2524AA448D00F16F0A /* lion.obj */,
+				52105E2624AA448D00F16F0A /* plane.obj */,
+				52105E2724AA448D00F16F0A /* plane2.obj */,
+				52105E2824AA448D00F16F0A /* cornell-mesh-ios.json */,
+				52105E2924AA448D00F16F0A /* test_diffuse.bmp */,
+				52105E2A24AA448D00F16F0A /* cornell-mesh.json */,
+				52105E2B24AA448D00F16F0A /* simple.obj */,
+			);
+			path = Mesh_Scene;
+			sourceTree = "<group>";
+		};
+		52105E2F24AA448D00F16F0A /* Mars Scene */ = {
+			isa = PBXGroup;
+			children = (
+				52105E3024AA448D00F16F0A /* acropolis3.obj */,
+				52105E3124AA448D00F16F0A /* acropolis2.obj */,
+				52105E3224AA448D00F16F0A /* marsMIS.json */,
+				52105E3324AA448D00F16F0A /* marsMIS-ios.json */,
+				52105E3424AA448D00F16F0A /* mars.obj */,
+				52105E3524AA448D00F16F0A /* acropoli.obj */,
+				52105E3624AA448D00F16F0A /* mars-ios.json */,
+				52105E3724AA448D00F16F0A /* acropolis3.mtl */,
+				52105E3824AA448D00F16F0A /* mars.json */,
+				52105E3924AA448D00F16F0A /* environment.jpg */,
+			);
+			path = "Mars Scene";
+			sourceTree = "<group>";
+		};
+		52C00BE824AA41CA0074A99D /* Scene Creation */ = {
+			isa = PBXGroup;
+			children = (
+				52C00BE924AA41CA0074A99D /* SceneParser.swift */,
+				52C00BEA24AA41CA0074A99D /* MeshBuilder */,
+				52C00BEE24AA41CA0074A99D /* ObjLoader */,
+			);
+			path = "Scene Creation";
+			sourceTree = "<group>";
+		};
+		52C00BEA24AA41CA0074A99D /* MeshBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				52C00BEB24AA41CA0074A99D /* Mesh.swift */,
+				52C00BEC24AA41CA0074A99D /* MeshCreator.swift */,
+				52C00BED24AA41CA0074A99D /* HelperStructs.swift */,
+			);
+			path = MeshBuilder;
+			sourceTree = "<group>";
+		};
+		52C00BEE24AA41CA0074A99D /* ObjLoader */ = {
+			isa = PBXGroup;
+			children = (
+				52C00BEF24AA41CA0074A99D /* Geometry.swift */,
+				52C00BF024AA41CA0074A99D /* OBJMaterial.swift */,
+				52C00BF124AA41CA0074A99D /* MaterialLoader.swift */,
+				52C00BF224AA41CA0074A99D /* MeshParser.swift */,
+				52C00BF324AA41CA0074A99D /* SwiftObjLoader.h */,
+				52C00BF424AA41CA0074A99D /* Scanner.swift */,
+				52C00BF524AA41CA0074A99D /* ObjLoader.swift */,
+			);
+			path = ObjLoader;
+			sourceTree = "<group>";
+		};
+		52C00BF624AA41CB0074A99D /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				52C00BF724AA41CB0074A99D /* PolluxRenderer.swift */,
+				52C00BF824AA41CB0074A99D /* PolluxViewController.swift */,
+				52C00BF924AA41CB0074A99D /* LaunchViewController.swift */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 		D826C0891FC88E0C00BD8A3E /* Pollux-iOS */ = {
@@ -213,15 +408,6 @@
 			path = "Pollux-iOS";
 			sourceTree = "<group>";
 		};
-		D826EDFD1FCA4E750078118A /* Stream Compaction */ = {
-			isa = PBXGroup;
-			children = (
-				D826EDFF1FCA4E750078118A /* StreamCompactor.swift */,
-				D826EDFE1FCA4E750078118A /* StreamCompactor.metal */,
-			);
-			path = "Stream Compaction";
-			sourceTree = "<group>";
-		};
 		D8388BD31FB3972E00653E5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +419,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8388BDC1FB3A51900653E5D /* macOS */ = {
+		D8388BDC1FB3A51900653E5D /* Pollux-macOS */ = {
 			isa = PBXGroup;
 			children = (
 				D8718BCF1FB2BE7B00260B81 /* AppDelegate.swift */,
@@ -241,7 +427,7 @@
 				D8718BD31FB2BE7B00260B81 /* Assets.xcassets */,
 				D8718BD51FB2BE7B00260B81 /* Main.storyboard */,
 			);
-			path = macOS;
+			path = "Pollux-macOS";
 			sourceTree = "<group>";
 		};
 		D85A88DD1FC4940E00E5F6A2 /* Data_Types */ = {
@@ -300,39 +486,18 @@
 		D8718BCE1FB2BE7B00260B81 /* Pollux */ = {
 			isa = PBXGroup;
 			children = (
-				D8388BDA1FB3A2F000653E5D /* PolluxViewController.swift */,
-				D8388BF71FB3A7E800653E5D /* PolluxRenderer.swift */,
-				D884B96D1FC4A284006A14CF /* SceneParser.swift */,
-				D81373AC1FD8682A001A7EAC /* SceneParameters.h */,
-				D884B96F1FC4AA98006A14CF /* Scenes */,
+				52C00BA124AA3AD60074A99D /* SceneParameters.h */,
+				52C00BF624AA41CB0074A99D /* User Interface */,
+				52C00BE824AA41CA0074A99D /* Scene Creation */,
+				52105E1424AA448D00F16F0A /* Scenes */,
 				D85A88DE1FC4942000E5F6A2 /* Shaders */,
 				D85A88DD1FC4940E00E5F6A2 /* Data_Types */,
 				D826C0891FC88E0C00BD8A3E /* Pollux-iOS */,
-				D8388BDC1FB3A51900653E5D /* macOS */,
-				D82384951FDB30A000DB5AA4 /* Unused Frameworks */,
+				D8388BDC1FB3A51900653E5D /* Pollux-macOS */,
 				D8718BD91FB2BE7B00260B81 /* Pollux.entitlements */,
 				D85B3EA71FB3F5D0001036B0 /* Pollux-Bridging-Header.h */,
 			);
 			path = Pollux;
-			sourceTree = "<group>";
-		};
-		D884B96F1FC4AA98006A14CF /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				0B06421A1FD9177D00EECC64 /* environment-scene-ios.json */,
-				0B06421B1FD9177D00EECC64 /* environment-scene.json */,
-				0B06421E1FD9177E00EECC64 /* environment.json */,
-				0B06421C1FD9177D00EECC64 /* environment1.png */,
-				0B06421D1FD9177D00EECC64 /* environment2.jpg */,
-				D8E60DCA1FD7A3AA00755A06 /* cornell-refract-ios.json */,
-				D8E60DC91FD7A3A900755A06 /* cornell-refract.json */,
-				D822E22F1FD70F38009CF57D /* cornell-reflect-ios.json */,
-				D822E22E1FD70F38009CF57D /* cornell-reflect.json */,
-				D8D1E7091FD5D562005A6757 /* cornell-ios.json */,
-				D8BD56831FC5FDEA00375BC2 /* cornell.json */,
-				D884B9701FC4EEC5006A14CF /* sphere.json */,
-			);
-			path = Scenes;
 			sourceTree = "<group>";
 		};
 		D884B9761FC51B3B006A14CF /* Loki */ = {
@@ -426,20 +591,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B0642201FD9177E00EECC64 /* environment-scene.json in Resources */,
-				D8BD56841FC5FDEA00375BC2 /* cornell.json in Resources */,
-				D822E2311FD70F38009CF57D /* cornell-reflect-ios.json in Resources */,
-				D8E60DCC1FD7A3AA00755A06 /* cornell-refract-ios.json in Resources */,
-				D822E2301FD70F38009CF57D /* cornell-reflect.json in Resources */,
-				0B0642231FD9177E00EECC64 /* environment.json in Resources */,
-				0B0642211FD9177E00EECC64 /* environment1.png in Resources */,
+				52105E6224AA448D00F16F0A /* simple.obj in Resources */,
+				52C00BDB24AA40770074A99D /* Main.storyboard in Resources */,
+				52105E4C24AA448D00F16F0A /* dragon-mesh.json in Resources */,
+				52105E4A24AA448D00F16F0A /* dragon-environment.jpg in Resources */,
+				52105E6424AA448D00F16F0A /* cornell-reflect-ios.json in Resources */,
+				52105E7C24AA448D00F16F0A /* environment.jpg in Resources */,
+				52105E6624AA448D00F16F0A /* environment1.png in Resources */,
+				52105E4624AA448D00F16F0A /* sphere.json in Resources */,
+				52105E6024AA448D00F16F0A /* cornell-mesh.json in Resources */,
+				52105E8024AA448D00F16F0A /* cornell-refract-ios.json in Resources */,
+				52105E5224AA448D00F16F0A /* test.bmp in Resources */,
+				52105E6824AA448D00F16F0A /* environment.json in Resources */,
+				52105E5024AA448D00F16F0A /* environment-scene-ios.json in Resources */,
+				52105E3C24AA448D00F16F0A /* cornell.json in Resources */,
+				52105E7624AA448D00F16F0A /* mars-ios.json in Resources */,
+				52105E6A24AA448D00F16F0A /* acropolis3.obj in Resources */,
+				52105E5824AA448D00F16F0A /* plane.obj in Resources */,
+				52105E5E24AA448D00F16F0A /* test_diffuse.bmp in Resources */,
+				52105E4024AA448D00F16F0A /* lion-mesh.json in Resources */,
+				52105E5A24AA448D00F16F0A /* plane2.obj in Resources */,
+				52105E5424AA448D00F16F0A /* simple.mtl in Resources */,
 				D8718BD41FB2BE7B00260B81 /* Assets.xcassets in Resources */,
-				0B0642221FD9177E00EECC64 /* environment2.jpg in Resources */,
-				D884B9711FC4EEC5006A14CF /* sphere.json in Resources */,
-				D8718BD71FB2BE7B00260B81 /* Main.storyboard in Resources */,
-				D8D1E70A1FD5D562005A6757 /* cornell-ios.json in Resources */,
-				0B06421F1FD9177E00EECC64 /* environment-scene-ios.json in Resources */,
-				D8E60DCB1FD7A3AA00755A06 /* cornell-refract.json in Resources */,
+				52105E6E24AA448D00F16F0A /* marsMIS.json in Resources */,
+				52105E7A24AA448D00F16F0A /* mars.json in Resources */,
+				52105E7E24AA448D00F16F0A /* environment2.jpg in Resources */,
+				52105E4224AA448D00F16F0A /* cornell-ios.json in Resources */,
+				52105E5624AA448D00F16F0A /* lion.obj in Resources */,
+				52105E6C24AA448D00F16F0A /* acropolis2.obj in Resources */,
+				52105E4424AA448D00F16F0A /* cornell-refract.json in Resources */,
+				52105E7224AA448D00F16F0A /* mars.obj in Resources */,
+				52105E4824AA448D00F16F0A /* cornell-reflect.json in Resources */,
+				52105E7024AA448D00F16F0A /* marsMIS-ios.json in Resources */,
+				52105E3E24AA448D00F16F0A /* lion-environment.jpg in Resources */,
+				52105E7424AA448D00F16F0A /* acropoli.obj in Resources */,
+				52105E5C24AA448D00F16F0A /* cornell-mesh-ios.json in Resources */,
+				52105E7824AA448D00F16F0A /* acropolis3.mtl in Resources */,
+				52105E4E24AA448D00F16F0A /* environment-scene.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,21 +635,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D1E70B1FD5D565005A6757 /* cornell-ios.json in Resources */,
-				0B0642311FD9248800EECC64 /* cornell-reflect-ios.json in Resources */,
-				D8D1E7071FD5D48D005A6757 /* cornell.json in Resources */,
-				D8D1E7081FD5D48D005A6757 /* sphere.json in Resources */,
-				0B06422E1FD9247E00EECC64 /* environment1.png in Resources */,
+				52105E4924AA448D00F16F0A /* cornell-reflect.json in Resources */,
+				52105E5924AA448D00F16F0A /* plane.obj in Resources */,
+				52105E6324AA448D00F16F0A /* simple.obj in Resources */,
+				52105E5724AA448D00F16F0A /* lion.obj in Resources */,
+				52105E6D24AA448D00F16F0A /* acropolis2.obj in Resources */,
+				52105E6524AA448D00F16F0A /* cornell-reflect-ios.json in Resources */,
+				52105E4324AA448D00F16F0A /* cornell-ios.json in Resources */,
+				52105E7B24AA448D00F16F0A /* mars.json in Resources */,
+				52105E7924AA448D00F16F0A /* acropolis3.mtl in Resources */,
+				52105E5524AA448D00F16F0A /* simple.mtl in Resources */,
+				52105E4B24AA448D00F16F0A /* dragon-environment.jpg in Resources */,
+				52105E6924AA448D00F16F0A /* environment.json in Resources */,
+				52105E4D24AA448D00F16F0A /* dragon-mesh.json in Resources */,
+				52105E4524AA448D00F16F0A /* cornell-refract.json in Resources */,
+				52105E4F24AA448D00F16F0A /* environment-scene.json in Resources */,
+				52105E3D24AA448D00F16F0A /* cornell.json in Resources */,
+				52105E7F24AA448D00F16F0A /* environment2.jpg in Resources */,
+				52105E7D24AA448D00F16F0A /* environment.jpg in Resources */,
+				52105E6B24AA448D00F16F0A /* acropolis3.obj in Resources */,
+				52105E7124AA448D00F16F0A /* marsMIS-ios.json in Resources */,
+				52105E4124AA448D00F16F0A /* lion-mesh.json in Resources */,
+				52105E8124AA448D00F16F0A /* cornell-refract-ios.json in Resources */,
 				D8D1E7041FD5D3C3005A6757 /* Main.storyboard in Resources */,
+				52105E4724AA448D00F16F0A /* sphere.json in Resources */,
+				52105E5F24AA448D00F16F0A /* test_diffuse.bmp in Resources */,
 				D8D1E7051FD5D3C3005A6757 /* Assets.xcassets in Resources */,
-				0B0642321FD9248A00EECC64 /* cornell-reflect.json in Resources */,
-				0B06422C1FD9247700EECC64 /* environment.json in Resources */,
+				52105E7524AA448D00F16F0A /* acropoli.obj in Resources */,
+				52105E5124AA448D00F16F0A /* environment-scene-ios.json in Resources */,
+				52105E5324AA448D00F16F0A /* test.bmp in Resources */,
+				52105E3F24AA448D00F16F0A /* lion-environment.jpg in Resources */,
+				52105E7724AA448D00F16F0A /* mars-ios.json in Resources */,
+				52105E7324AA448D00F16F0A /* mars.obj in Resources */,
+				52105E6F24AA448D00F16F0A /* marsMIS.json in Resources */,
+				52105E5B24AA448D00F16F0A /* plane2.obj in Resources */,
 				D8D1E7061FD5D3C3005A6757 /* LaunchScreen.storyboard in Resources */,
-				0B0642301FD9248600EECC64 /* cornell-refract.json in Resources */,
-				0B06422B1FD9247300EECC64 /* environment-scene.json in Resources */,
-				0B06422D1FD9247C00EECC64 /* environment2.jpg in Resources */,
-				0B06422A1FD9247000EECC64 /* environment-scene-ios.json in Resources */,
-				0B06422F1FD9248400EECC64 /* cornell-refract-ios.json in Resources */,
+				52105E5D24AA448D00F16F0A /* cornell-mesh-ios.json in Resources */,
+				52105E6124AA448D00F16F0A /* cornell-mesh.json in Resources */,
+				52105E6724AA448D00F16F0A /* environment1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,34 +683,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C00C1424AA41E00074A99D /* SwiftObjLoader.h in Sources */,
+				52C00C1024AA41CB0074A99D /* PolluxViewController.swift in Sources */,
+				52C00BD824AA3FD70074A99D /* SceneParameters.h in Sources */,
+				52C00C0624AA41CB0074A99D /* MaterialLoader.swift in Sources */,
+				52C00BC524AA3FB50074A99D /* PolluxTypes.h in Sources */,
+				52C00BFE24AA41CB0074A99D /* MeshCreator.swift in Sources */,
+				52C00BC624AA3FB50074A99D /* Constants.h in Sources */,
+				52C00C0224AA41CB0074A99D /* Geometry.swift in Sources */,
+				52C00C0824AA41CB0074A99D /* MeshParser.swift in Sources */,
+				52C00C0C24AA41CB0074A99D /* ObjLoader.swift in Sources */,
 				D85481E61FDB71DB006EDBB0 /* shapes_header.metal in Sources */,
-				D826EE011FCA4E750078118A /* StreamCompactor.swift in Sources */,
 				D826C0C31FC8930800BD8A3E /* Pollux-Bridging-Header.h in Sources */,
 				D81373B41FD86B51001A7EAC /* mis_helper.metal in Sources */,
+				52C00C1224AA41CB0074A99D /* LaunchViewController.swift in Sources */,
 				D81110601FC455E80059C01B /* intersections.metal in Sources */,
 				D84F8F221FC483320001CF76 /* intersections_header.metal in Sources */,
 				D85481E81FDB722C006EDBB0 /* shapes.metal in Sources */,
 				D8718BE21FB2BFFF00260B81 /* pathtrace.metal in Sources */,
 				D8BD56791FC5DF9900375BC2 /* interactions_header.metal in Sources */,
 				D8718BD01FB2BE7B00260B81 /* AppDelegate.swift in Sources */,
+				52C00C0024AA41CB0074A99D /* HelperStructs.swift in Sources */,
 				D8BD567B1FC5E50B00375BC2 /* interactions.metal in Sources */,
 				D884B9731FC51624006A14CF /* loki.metal in Sources */,
-				D884B96E1FC4A284006A14CF /* SceneParser.swift in Sources */,
 				D884B9751FC51A27006A14CF /* loki_header.metal in Sources */,
 				0B0642271FD9188400EECC64 /* DeviceTexture.swift in Sources */,
-				D823849B1FDB376800DB5AA4 /* Partition.metal in Sources */,
 				D81373B01FD86B51001A7EAC /* mis_helper_header.metal in Sources */,
 				D826C02F1FC867AE00BD8A3E /* PlatformTypes.swift in Sources */,
+				52C00C0424AA41CB0074A99D /* OBJMaterial.swift in Sources */,
 				0B0642261FD9188400EECC64 /* Environment.swift in Sources */,
 				D8BD56801FC5F8A000375BC2 /* bsdf_shading_header.metal in Sources */,
 				D8BD56821FC5F9F600375BC2 /* bsdf_shading.metal in Sources */,
-				D8388BF81FB3A7E800653E5D /* PolluxRenderer.swift in Sources */,
-				D823849C1FDB376800DB5AA4 /* Partition.swift in Sources */,
+				52C00BFC24AA41CB0074A99D /* Mesh.swift in Sources */,
+				52C00BFA24AA41CB0074A99D /* SceneParser.swift in Sources */,
 				D84F8F201FC4682E0001CF76 /* simd_la.swift in Sources */,
-				D826EE001FCA4E750078118A /* StreamCompactor.metal in Sources */,
 				D825716F1FBF9F2C00352CDD /* SharedBuffer.swift in Sources */,
-				D8388BDB1FB3A2F000653E5D /* PolluxViewController.swift in Sources */,
+				52C00C0E24AA41CB0074A99D /* PolluxRenderer.swift in Sources */,
 				D80BE56A1FCE5D7C0023713F /* DeviceBuffer.swift in Sources */,
+				52C00C0A24AA41CB0074A99D /* Scanner.swift in Sources */,
 				D81373B21FD86B51001A7EAC /* mis.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,34 +729,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D1E6EA1FD5D332005A6757 /* PolluxViewController.swift in Sources */,
-				D8D1E6EB1FD5D332005A6757 /* SceneParser.swift in Sources */,
-				D8D1E6EC1FD5D332005A6757 /* PolluxRenderer.swift in Sources */,
+				52C00C0524AA41CB0074A99D /* OBJMaterial.swift in Sources */,
+				52C00BD424AA3FC90074A99D /* shapes_header.metal in Sources */,
+				52C00BD524AA3FC90074A99D /* shapes.metal in Sources */,
 				D81373B51FD86B51001A7EAC /* mis_helper.metal in Sources */,
-				D8D1E6ED1FD5D332005A6757 /* StreamCompactor.swift in Sources */,
-				D8D1E6EE1FD5D332005A6757 /* StreamCompactor.metal in Sources */,
 				D8D1E6EF1FD5D332005A6757 /* pathtrace.metal in Sources */,
 				D8D1E6F01FD5D332005A6757 /* intersections_header.metal in Sources */,
 				D8D1E6F11FD5D332005A6757 /* intersections.metal in Sources */,
+				52C00BFD24AA41CB0074A99D /* Mesh.swift in Sources */,
 				D8D1E6F21FD5D332005A6757 /* interactions_header.metal in Sources */,
 				D8D1E6F31FD5D332005A6757 /* interactions.metal in Sources */,
 				D8D1E6F41FD5D332005A6757 /* bsdf_shading_header.metal in Sources */,
 				D8D1E6F51FD5D332005A6757 /* bsdf_shading.metal in Sources */,
+				52C00C0B24AA41CB0074A99D /* Scanner.swift in Sources */,
+				52C00C1324AA41CB0074A99D /* LaunchViewController.swift in Sources */,
 				D8D1E6F61FD5D332005A6757 /* loki_header.metal in Sources */,
 				D8D1E6F71FD5D332005A6757 /* loki.metal in Sources */,
 				D8D1E6F81FD5D332005A6757 /* PolluxTypes.h in Sources */,
 				D81373B31FD86B51001A7EAC /* mis.metal in Sources */,
 				0B0642291FD9193A00EECC64 /* Environment.swift in Sources */,
+				52C00C0F24AA41CB0074A99D /* PolluxRenderer.swift in Sources */,
+				52C00C0924AA41CB0074A99D /* MeshParser.swift in Sources */,
 				D8D1E6F91FD5D332005A6757 /* Constants.h in Sources */,
+				52C00BFF24AA41CB0074A99D /* MeshCreator.swift in Sources */,
 				D81373B11FD86B51001A7EAC /* mis_helper_header.metal in Sources */,
+				52C00C0324AA41CB0074A99D /* Geometry.swift in Sources */,
+				52C00C0724AA41CB0074A99D /* MaterialLoader.swift in Sources */,
 				D8D1E6FA1FD5D332005A6757 /* simd_la.swift in Sources */,
 				D8D1E6FB1FD5D332005A6757 /* SharedBuffer.swift in Sources */,
+				52C00BFB24AA41CB0074A99D /* SceneParser.swift in Sources */,
 				0B0642281FD9193800EECC64 /* DeviceTexture.swift in Sources */,
 				D8D1E6FC1FD5D332005A6757 /* DeviceBuffer.swift in Sources */,
+				52C00C0124AA41CB0074A99D /* HelperStructs.swift in Sources */,
 				D8D1E6FD1FD5D332005A6757 /* PlatformTypes.swift in Sources */,
+				52C00C1124AA41CB0074A99D /* PolluxViewController.swift in Sources */,
 				D8D1E6FE1FD5D332005A6757 /* AppDelegate.swift in Sources */,
+				52C00C0D24AA41CB0074A99D /* ObjLoader.swift in Sources */,
 				D8D1E6FF1FD5D332005A6757 /* Assets.xcassets in Sources */,
-				D8D1E7001FD5D332005A6757 /* Info.plist in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +920,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = F866ZHAR49;
-				INFOPLIST_FILE = "$(SRCROOT)/Pollux/macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Pollux/Pollux-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Pollux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -710,7 +940,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = F866ZHAR49;
-				INFOPLIST_FILE = "$(SRCROOT)/Pollux/macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Pollux/Pollux-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Pollux;
 				PRODUCT_NAME = "$(TARGET_NAME)";

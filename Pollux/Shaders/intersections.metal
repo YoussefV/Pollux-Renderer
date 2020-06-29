@@ -80,10 +80,10 @@ Intersection getIntersection(const thread       Ray          &ray,
         intersection.outside    = outside;
         
         // Get UV Coordinates
-        getUVCoordinates(intersection, geoms[hit_geom_index]);
+//        getUVCoordinates(intersection, geoms[hit_geom_index]);
         
         // Sets Shading Normal
-        computeTBN(intersection, geoms[hit_geom_index]);
+//        computeTBN(intersection, geoms[hit_geom_index]);
     }
     
     return intersection;
