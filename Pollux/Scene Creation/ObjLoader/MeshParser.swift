@@ -22,7 +22,7 @@ class MeshParser {
         return string as String
     }
     
-    static func parseMesh(_ filepath : String) -> ([Float], float3, float3) {
+    static func parseMesh(_ filepath : String) -> ([Float], SIMD3<Float>, SIMD3<Float>) {
         // open up the file and get the contents
         let source = try? openOBJFile(filepath)
         
@@ -40,6 +40,6 @@ class MeshParser {
             fatalError(error.localizedDescription)
         }
         
-        return ([], float3(0), float3(0))
+        return ([], SIMD3<Float>(repeating: 0), SIMD3<Float>(repeating: 0))
     }
 }

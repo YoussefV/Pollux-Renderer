@@ -20,9 +20,9 @@ class SceneParser {
     private static var kdTreeOffset = 0
     private static var kdTrees : [Float] = []
     
-    private static func parseFloatArray(_ dict: [String: Any], _ key: String) -> float3? {
+    private static func parseFloatArray(_ dict: [String: Any], _ key: String) -> SIMD3<Float>? {
         if let arr = dict[key] {
-             return float3((arr as! Array<NSNumber>).map{$0.floatValue})
+             return SIMD3<Float>((arr as! Array<NSNumber>).map{$0.floatValue})
         } else {
             return nil
         }
@@ -31,7 +31,7 @@ class SceneParser {
     private static func parseEnvironment(_ environmentJSON : [String: Any]?) -> Environment?  {
         if (environmentJSON) == nil {return nil}
         let filepath = environmentJSON!["filepath"] as! String
-        let emittance = float3(environmentJSON!["emittance"] as! Array<Float>)
+        let emittance = SIMD3<Float>(environmentJSON!["emittance"] as! Array<Float>)
         let env = Environment(from: filepath, with: emittance)
         return env
     }
@@ -41,8 +41,8 @@ class SceneParser {
         camera.pos    = parseFloatArray(cameraJSON, "pos")!
         camera.lookAt = parseFloatArray(cameraJSON, "lookAt")!
         camera.up     = parseFloatArray(cameraJSON, "up")!
-        camera.data   = float4(0,0, cameraJSON["fov"] as! Float, cameraJSON["depth"] as! Float)
-        camera.lensData = float2(cameraJSON["lensRadius"] as? Float ?? 0.0, cameraJSON["focalDistance"] as? Float ?? 1.0)
+        camera.data   = SIMD4<Float>(0,0, cameraJSON["fov"] as! Float, cameraJSON["depth"] as! Float)
+        camera.lensData = SIMD2<Float>(cameraJSON["lensRadius"] as? Float ?? 0.0, cameraJSON["focalDistance"] as? Float ?? 1.0)
         
         // Actually Computing the view and right vectors here
         camera.view   = simd_normalize(camera.lookAt - camera.pos);
@@ -90,12 +90,12 @@ class SceneParser {
         for materialJSON in materialsJSON {
             var material = Material();
             material.bsdf                = materialJSON["bsdf"] as? Int16 ?? 0
-            material.color               = parseFloatArray(materialJSON, "color") ?? float3(0.2, 0.2, 0.2)
-            material.emittance           = parseFloatArray(materialJSON, "emittance") ?? float3(0, 0, 0)
+            material.color               = parseFloatArray(materialJSON, "color") ?? SIMD3<Float>(0.2, 0.2, 0.2)
+            material.emittance           = parseFloatArray(materialJSON, "emittance") ?? SIMD3<Float>(0, 0, 0)
             material.hasReflective       = materialJSON["hasReflective"] as? Float ?? 0.0
             material.hasRefractive       = materialJSON["hasRefractive"] as? Float ?? 0.0
             material.index_of_refraction = materialJSON["index_of_refraction"] as? Float ?? 0.0
-            material.specular_color      = parseFloatArray(materialJSON, "specular_color") ?? float3(0, 0, 0)
+            material.specular_color      = parseFloatArray(materialJSON, "specular_color") ?? SIMD3<Float>(0, 0, 0)
             material.specular_exponent   = materialJSON["specular_exponent"] as? Float ?? 0.0
             
             self.light_types += (material.bsdf < 0) ? 1 : 0;

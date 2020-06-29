@@ -71,7 +71,7 @@ class Mesh {
 //        print("\(self.root.triangleCount) tree triangles");
     }
     
-    func Compact() -> ([Float], float3, float3) {
+    func Compact() -> ([Float], SIMD3<Float>, SIMD3<Float>) {
         let nodeCount = self.root.nodeCount
         let triCount  = self.root.triangleCount
         
@@ -217,7 +217,7 @@ class Mesh {
         // - maxDepth: the maximum_depth of this node in the tree. The tree has a maximum of 2^16 depth.
         // - maxNodes: The maximum number of nodes possible in a leaf. Limited to 255 at most.
         init(_ triangles : inout [Triangle],
-             _ nodeMin : float3, _ nodeMax : float3,
+             _ nodeMin : SIMD3<Float>, _ nodeMax : SIMD3<Float>,
              _ depth   : UInt16, _ maxDepth : UInt16,
              _ maxNodes : UInt8) {
             
@@ -250,7 +250,7 @@ class Mesh {
          * - Called in initializor
          **/
         private func BuildNode(_ triangles : inout [Triangle],
-                               _ nodeMin : float3, _ nodeMax : float3,
+                               _ nodeMin : SIMD3<Float>, _ nodeMax : SIMD3<Float>,
                                _ depth   : UInt16, _ maxDepth : UInt16,
                                _ threshold : UInt8) {
             

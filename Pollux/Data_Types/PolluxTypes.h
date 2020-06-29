@@ -72,9 +72,9 @@ typedef struct
 typedef struct {
     enum GeomType type;
     int materialid;
-    vector_float3 translation;
-    vector_float3 rotation;
-    vector_float3 scale;
+    vector_float3  translation;
+    vector_float3  rotation;
+    vector_float3  scale;
     matrix_float4x4 transform;
     matrix_float4x4 inverseTransform;
     matrix_float4x4 invTranspose;
@@ -91,19 +91,19 @@ typedef struct
 
 typedef struct {
     
-    vector_float3 bounds_min;
-    vector_float3 bounds_max;
-    vector_float3 bounds_center;
+    vector_float3  bounds_min;
+    vector_float3  bounds_max;
+    vector_float3  bounds_center;
 } AABB;
 
 typedef struct {
-    vector_float3 color;
+    vector_float3  color;
     float         specular_exponent;
     
-    vector_float3 specular_color;
+    vector_float3  specular_color;
     float hasReflective;
     
-    vector_float3 emittance;
+    vector_float3  emittance;
     float hasRefractive;
     
     enum MicrofacetDistribution distribution;
@@ -113,10 +113,10 @@ typedef struct {
 
 typedef struct {
     // Ray Info
-    vector_float3 origin;
-    vector_float3 direction;
-    vector_float3 color;
-    vector_float3 throughput;
+    vector_float3  origin;
+    vector_float3  direction;
+    vector_float3  color;
+    vector_float3  throughput;
     
     // Ray's Pixel Index x, y, and Remaining Bounces
     vector_uint3 idx_bounces;
@@ -128,15 +128,15 @@ typedef struct {
     vector_float4 data;
     
     // Camera's Position (duh)
-    vector_float3 pos;
+    vector_float3  pos;
     // Stores the target the camera is looking at
-    vector_float3 lookAt;
+    vector_float3  lookAt;
     // Direction Camera is looking in
-    vector_float3 view;
+    vector_float3  view;
     // The camera's right vector
-    vector_float3 right;
+    vector_float3  right;
     // The camera's up vector
-    vector_float3 up;
+    vector_float3  up;
     // Lens Information (lensRadius, focalDistance) for DOF
     vector_float2 lensData;
 } Camera;
@@ -146,15 +146,15 @@ typedef struct {
 // 2) BSDF evaluation: generate a new ray
 typedef struct {
     // Surface Normal At the Point of interseciton. No Transformations are applied to it.
-    vector_float3 normal;
+    vector_float3  normal;
     float t;
     
-    vector_float3 point;
+    vector_float3  point;
     int materialId;
     
     int outside;
     vector_float2 uv;               // The UV coordinates computed at the intersection
-    vector_float3 tangent, bitangent;
+    vector_float3  tangent, bitangent;
     
 //    Geom const* objectHit;     // The object that the ray intersected, or nullptr if the ray hit nothing.
 } Intersection;

@@ -19,20 +19,20 @@ import simd
 
 
 struct AABB {
-    static let aabb   =  [float3( 1, 1, 1),
-                          float3( 1, 1,-1),
-                          float3( 1,-1, 1),
-                          float3( 1,-1,-1),
-                          float3(-1, 1, 1),
-                          float3(-1, 1,-1),
-                          float3(-1,-1, 1),
-                          float3(-1,-1,-1)]
+    static let aabb   =  [SIMD3<Float>( 1, 1, 1),
+                          SIMD3<Float>( 1, 1,-1),
+                          SIMD3<Float>( 1,-1, 1),
+                          SIMD3<Float>( 1,-1,-1),
+                          SIMD3<Float>(-1, 1, 1),
+                          SIMD3<Float>(-1, 1,-1),
+                          SIMD3<Float>(-1,-1, 1),
+                          SIMD3<Float>(-1,-1,-1)]
     
-    let bounds_min    : float3;
-    let bounds_max    : float3;
-    let bounds_center : float3;
+    let bounds_min    : SIMD3<Float>;
+    let bounds_max    : SIMD3<Float>;
+    let bounds_center : SIMD3<Float>;
 
-    init (_ min : float3 = float3(0), _ max : float3 = float3(0)) {
+    init (_ min : SIMD3<Float> = SIMD3<Float>(repeating: 0), _ max : SIMD3<Float> = SIMD3<Float>(repeating: 0)) {
         self.bounds_min = min
         self.bounds_max = max
         self.bounds_center = (min + max) * 0.5;
@@ -68,8 +68,8 @@ struct AABB {
         
         for i in 0..<8
         {
-            let v : float3 = bounds_center + (AABB.aabb[i] * halfSize);
-            let tPoint = transform * float4(v.x, v.y, v.z, 1);
+            let v : SIMD3<Float> = bounds_center + (AABB.aabb[i] * halfSize);
+            let tPoint = transform *  SIMD4<Float>(v, 1);
             
             maxX = max(tPoint.x, maxX);
             maxY = max(tPoint.y, maxY);
@@ -80,8 +80,8 @@ struct AABB {
             minZ = min(tPoint.z, minZ);
         }
         
-        let newMin = float3(minX, minY, minZ);
-        let newMax = float3(maxX, maxY, maxZ);
+        let newMin = SIMD3<Float>(minX, minY, minZ);
+        let newMax = SIMD3<Float>(maxX, maxY, maxZ);
         
         return AABB(newMin, newMax);
     }
@@ -91,19 +91,19 @@ struct AABB {
 struct Triangle
 {
     // The actual points
-    let p1: float3;
-    let p2: float3;
-    let p3: float3;
+    let p1: SIMD3<Float>;
+    let p2: SIMD3<Float>;
+    let p3: SIMD3<Float>;
     
     // Normals
-    let n1: float3;
-    let n2: float3;
-    let n3: float3;
+    let n1: SIMD3<Float>;
+    let n2: SIMD3<Float>;
+    let n3: SIMD3<Float>;
     
     // UVs
-    let t1: float2;
-    let t2: float2;
-    let t3: float2;
+    let t1: SIMD2<Float>;
+    let t2: SIMD2<Float>;
+    let t3: SIMD2<Float>;
     
     // The triangle's axis aligned bounding box
     let bounds: AABB;

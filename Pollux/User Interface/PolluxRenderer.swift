@@ -98,7 +98,7 @@ class PolluxRenderer: NSObject {
      **  Frame Shared Buffer
      **
      ******/
-    let frame : DeviceBuffer<float4>
+    let frame : DeviceBuffer<SIMD4<Float>>
     
     /*****
      **
@@ -113,7 +113,7 @@ class PolluxRenderer: NSObject {
      **
      *****/
     var environment : DeviceTexture?
-    var envEmittance : float3
+    var envEmittance : SIMD3<Float>
     
     /*****
      **
@@ -162,13 +162,13 @@ class PolluxRenderer: NSObject {
         self.geoms         = DeviceBuffer<Geom>(count: scene.1.count, with: device, containing: scene.1, blitOn: self.commandQueue)
         self.kdtrees       = SharedBuffer<Float>(count: scene.5.count, with:device, containing: scene.5 /**, blitOn: self.commandQueue**/)
         self.materials     = DeviceBuffer<Material>(count: scene.3.count, with: device, containing: scene.3, blitOn: self.commandQueue)
-        self.frame         = DeviceBuffer<float4>(count: self.rays.count, with: self.device)
+        self.frame         = DeviceBuffer<SIMD4<Float>>(count: self.rays.count, with: self.device)
         self.intersections = DeviceBuffer<Intersection>(count: self.rays.count, with: self.device)
         if let environment = scene.4 {
             self.environment   = DeviceTexture(from: environment.filename as String, with: device)
             self.envEmittance  = environment.emittance
         } else {
-            self.envEmittance  = float3(0, 0, 0)
+            self.envEmittance  = SIMD3<Float>(0, 0, 0)
         }
         self.light_count   = scene.2
         
@@ -254,7 +254,7 @@ extension PolluxRenderer {
             commandEncoder.setBuffer(self.materials.data, offset: 0, index: 4)
             // Buffer (5) is already set
             commandEncoder.setTexture(self.environment?.data ?? self.view.currentDrawable?.texture, index: 5)
-            commandEncoder.setBytes(&self.envEmittance, length: MemoryLayout<float3>.size, index: 6)
+            commandEncoder.setBytes(&self.envEmittance, length: MemoryLayout<SIMD3<Float>>.size, index: 6)
             
             if (integrator == "MIS" || integrator == "Direct") {
                 if (integrator == "MIS") {
@@ -325,7 +325,7 @@ extension PolluxRenderer {
         // Clear the drawable on the first iteration
         if (self.iteration == 0) {
             let blitCommandEnconder = commandBuffer?.makeBlitCommandEncoder()
-            let frameRange = Range(0 ..< MemoryLayout<float4>.stride * self.frame.count)
+            let frameRange = 0 ..< MemoryLayout<SIMD4<Float>>.stride * self.frame.count
             blitCommandEnconder?.fill(buffer: self.frame.data!, range: frameRange, value: 0)
             blitCommandEnconder?.endEncoding()
             

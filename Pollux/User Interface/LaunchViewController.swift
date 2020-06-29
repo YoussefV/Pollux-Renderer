@@ -39,7 +39,7 @@ class LaunchViewController: PlatformViewController {
             
             
             #if os(macOS)
-                self.performSegue(withIdentifier: PlatformStoryboardSegue.Identifier(rawValue: "segueToRenderer"), sender: self)
+                self.performSegue(withIdentifier: "segueToRenderer", sender: self)
                 // Close old window
                 self.view.window?.close()
             #else

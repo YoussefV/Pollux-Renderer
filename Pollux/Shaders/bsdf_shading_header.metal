@@ -114,7 +114,7 @@ void SnS_microfacetBTDF(thread Ray& ray,
  * rng:      An instance of the Loki rng that creates a new random
  *           number at every thread instance
  *
- * RETURNS:  a float3 indicating representing this new random
+ * RETURNS:  a SIMD3<Float> indicating representing this new random
  *           direction
  *
  */
